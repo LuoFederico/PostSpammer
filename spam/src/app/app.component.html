@@ -1,0 +1,17 @@
+<form>
+  <div>
+    <label for="inutile">Cose inutili :</label>
+    <input type="text" name="inutile" #inutile>
+  </div>
+  <div>
+    <label for="spam">Spam : </label>
+    <input type="text" name="spam" #spam>
+    <input type="submit" value="spamma" (click)="spamma(inutile, spam)">
+  </div>
+</form>
+
+<ul>
+    <li *ngFor="let testo of articles">
+    {{testo}}
+    </li>
+<ul>
